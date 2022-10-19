@@ -1,0 +1,132 @@
+:root {
+  --color-green: #00ff00;
+  --color-green-dark: #00b600;
+}
+
+.body {
+  min-width: 500px;
+  color: var(--color-green);
+  background-color: black;
+}
+
+.input {
+  color: var(--color-green);
+  background-color: black;
+  border: 0.1vw solid var(--color-green);
+  border-radius: 0;
+}
+
+.input:focus {
+  color: var(--color-green);
+  background-color: black;
+  border: 0.1vw solid var(--color-green);
+  box-shadow: none;
+}
+
+.welcome-btn {
+  transition: transform 0.4s;
+}
+
+.welcome-btn:hover {
+  transform: scale(1.2);
+}
+
+.chat__inner {
+  height: 100%;
+  max-height: 90%;
+  border: 0.1vw solid var(--color-green);
+}
+
+.chat-left-side {
+  border-right: 0.1vw solid var(--color-green);
+}
+
+.chat-rooms__item {
+  border-bottom: 0.1vw solid var(--color-green);
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.chat-window__input {
+  bottom: 0;
+}
+
+.button {
+  background-color: transparent;
+  border: 0.1vw solid var(--color-green);
+  border-radius: 0;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 0.1vw solid var(--color-green);
+}
+
+.button:focus {
+  background-color: transparent;
+  border: 0.1vw solid var(--color-green);
+  box-shadow: none;
+}
+
+.rooms-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.rooms-list__item {
+  border: 0.1vw solid var(--color-green);
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.rooms-list__item:last-child {
+  border-bottom: 0.1vw solid var(--color-green);
+}
+
+.scroll-wrapper {
+  height: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  position: relative;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  width: 15px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--color-green-dark);
+  border-left: 10px solid black;
+}
+
+.scroll-wrapper::-webkit-scrollbar-track {
+  background-color: black;
+
+}
+
+.scroll-wrapper__inner {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+}
+
+
+@media (max-width: 575.98px) {
+  .chat__inner {
+    max-height: 100%;
+    border: none;
+  }
+
+  .test {
+    height: 70vh;
+  }
+}
